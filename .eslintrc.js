@@ -42,10 +42,10 @@ module.exports = {
         node: true
       },
       plugins: ['node'],
-      rules: Object.assign({}, require('eslint-plugin-node').configs.recommended.rules, {
+      rules: {
         camelcase: 'off',
         'node/no-unpublished-require': 'off'
-      })
+      }
     }
   ]
 };
